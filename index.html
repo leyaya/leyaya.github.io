@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-andorid_studio_cordova/android_studio_cordova" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/26/andorid_studio_cordova/android_studio_cordova/" class="article-date">
+  <time datetime="2018-08-26T07:25:56.854Z" itemprop="datePublished">2018-08-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="这篇是用android-studio-cordova-打包成apk"><a href="#这篇是用android-studio-cordova-打包成apk" class="headerlink" title="这篇是用android studio cordova 打包成apk"></a>这篇是用android studio cordova 打包成apk</h1><h2 id="学习指南"><a href="#学习指南" class="headerlink" title="学习指南"></a>学习指南</h2><p>参考链接：</p>
+<p><a href="https://blog.csdn.net/weixin_37730482/article/details/74516459" target="_blank" rel="noopener">Android Cordova创建APP常用cmd命令</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">bogon:cordovaApp dfzxit$ cordova create hello com.example.hello HelloWorld</span><br><span class="line">/usr/<span class="built_in">local</span>/lib/node_modules/cordova/node_modules/insight/node_modules/configstore/index.js:53</span><br><span class="line">				throw err;</span><br><span class="line">				^</span><br><span class="line"></span><br><span class="line">Error: EACCES: permission denied, open <span class="string">'/Users/dfzxit/.config/configstore/insight-cordova.json'</span></span><br><span class="line">You don<span class="string">'t have access to this file.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    at Error (native)</span></span><br><span class="line"><span class="string">    at Object.fs.openSync (fs.js:642:18)</span></span><br><span class="line"><span class="string">    at Object.fs.readFileSync (fs.js:510:33)</span></span><br><span class="line"><span class="string">    at Object.get (/usr/local/lib/node_modules/cordova/node_modules/insight/node_modules/configstore/index.js:34:26)</span></span><br><span class="line"><span class="string">    at Object.Configstore (/usr/local/lib/node_modules/cordova/node_modules/insight/node_modules/configstore/index.js:27:44)</span></span><br><span class="line"><span class="string">    at new Insight (/usr/local/lib/node_modules/cordova/node_modules/insight/lib/index.js:38:34)</span></span><br><span class="line"><span class="string">    at Object.&lt;anonymous&gt; (/usr/local/lib/node_modules/cordova/src/telemetry.js:37:15)</span></span><br><span class="line"><span class="string">    at Module._compile (module.js:577:32)</span></span><br><span class="line"><span class="string">    at Object.Module._extensions..js (module.js:586:10)</span></span><br><span class="line"><span class="string">    at Module.load (module.js:494:32)</span></span><br></pre></td></tr></table></figure>
+<p>第一句话就报错了，让我情何以堪</p>
+<p>参考链接</p>
+<p><a href="https://www.jianshu.com/p/9e92b4d3a45c" target="_blank" rel="noopener">原+转】mac下cordova因权限问题总安装失败的解决方法</a></p>
+<p>解决办法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">bogon:~ dfzxit$ sudo chmod 744 /Users/dfzxit/.config/configstore/insight-cordova.json</span><br><span class="line">bogon:~ dfzxit$ cordova -v</span><br><span class="line">Update notifier was not able to access the config file.</span><br><span class="line">You may grant permissions to the file: <span class="string">'sudo chmod 744 ~/.config/configstore/update-notifier-cordova.json'</span></span><br><span class="line">6.2.0</span><br><span class="line">bogon:~ dfzxit$ sudo chmod 744 ~/.config/configstore/update-notifier-cordova.json</span><br><span class="line">bogon:~ dfzxit$ cordova -v</span><br><span class="line">6.2.0</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">bogon:cordovaApp dfzxit$ cordova create hello com.example.hello HelloWorld</span><br><span class="line">Creating a new cordova project.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">┌──────────────────────────────────────────┐</span><br><span class="line">│ Update available: 8.0.0 (current: 6.2.0) │</span><br><span class="line">│ Run npm install -g cordova to update.    │</span><br><span class="line">└──────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+<p>提示让我升级到可用版本，先暂时不升级<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">bogon:hello dfzxit$ cordova serve android</span><br><span class="line">       bogon:hello dfzxit$ cordova platform add android</span><br><span class="line">       Adding android project...</span><br><span class="line">       Creating Cordova project <span class="keyword">for</span> the Android platform:</span><br><span class="line">       	Path: platforms/android</span><br><span class="line">       	Package: com.example.hello</span><br><span class="line">       	Name: HelloWorld</span><br><span class="line">       	Activity: MainActivity</span><br><span class="line">       	Android target: android-23</span><br><span class="line">       Android project created with cordova-android@5.1.1</span><br><span class="line">       Discovered plugin <span class="string">"cordova-plugin-whitelist"</span> <span class="keyword">in</span> config.xml. Adding it to the project</span><br><span class="line">       Fetching plugin <span class="string">"cordova-plugin-whitelist@1"</span> via npm</span><br><span class="line">       Installing <span class="string">"cordova-plugin-whitelist"</span> <span class="keyword">for</span> android</span><br><span class="line">       </span><br><span class="line">                      This plugin is only applicable <span class="keyword">for</span> versions of cordova-android greater than 4.0. If you have a previous platform version, you <span class="keyword">do</span> *not* need this plugin since the whitelist will be built <span class="keyword">in</span>.</span><br><span class="line">bogon:hello dfzxit$ cordova plugin ls</span><br><span class="line">cordova-plugin-whitelist 1.3.3 <span class="string">"Whitelist"</span></span><br><span class="line">bogon:hello dfzxit$ cordova platform ls</span><br><span class="line">Installed platforms:</span><br><span class="line">  android 5.1.1</span><br><span class="line">Available platforms: </span><br><span class="line">  amazon-fireos ~3.6.3 (deprecated)</span><br><span class="line">  blackberry10 ~3.8.0</span><br><span class="line">  browser ~4.1.0</span><br><span class="line">  firefoxos ~3.6.3</span><br><span class="line">  ios ~4.1.0</span><br><span class="line">  osx ~4.0.1</span><br><span class="line">  webos ~3.7.0</span><br></pre></td></tr></table></figure></p>
+<p>感觉不需要再下插件什么的。</p>
+<p>参考链接<a href="https://blog.csdn.net/weixin_37730482/article/details/74516459" target="_blank" rel="noopener">Android Cordova创建APP常用cmd命令</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br></pre></td><td class="code"><pre><span class="line">bogon:hello dfzxit$ cordova build android</span><br><span class="line">ANDROID_HOME=/usr/<span class="built_in">local</span>/android-sdk-macosx</span><br><span class="line">JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home</span><br><span class="line">:preBuild UP-TO-DATE</span><br><span class="line">:preDebugBuild UP-TO-DATE</span><br><span class="line">:checkDebugManifest</span><br><span class="line">:CordovaLib:preBuild UP-TO-DATE</span><br><span class="line">:CordovaLib:preDebugBuild UP-TO-DATE</span><br><span class="line">:CordovaLib:compileDebugNdk UP-TO-DATE</span><br><span class="line">:CordovaLib:compileLint</span><br><span class="line">:CordovaLib:copyDebugLint UP-TO-DATE</span><br><span class="line">:CordovaLib:mergeDebugProguardFiles</span><br><span class="line">:CordovaLib:packageDebugRenderscript UP-TO-DATE</span><br><span class="line">:CordovaLib:checkDebugManifest</span><br><span class="line">:CordovaLib:prepareDebugDependencies</span><br><span class="line">:CordovaLib:compileDebugRenderscript</span><br><span class="line">:CordovaLib:generateDebugResValues</span><br><span class="line">:CordovaLib:generateDebugResources</span><br><span class="line">:CordovaLib:packageDebugResources</span><br><span class="line">:CordovaLib:compileDebugAidl</span><br><span class="line">:CordovaLib:generateDebugBuildConfig</span><br><span class="line">:CordovaLib:generateDebugAssets UP-TO-DATE</span><br><span class="line">:CordovaLib:mergeDebugAssets</span><br><span class="line">:CordovaLib:processDebugManifest</span><br><span class="line">:CordovaLib:processDebugResources</span><br><span class="line">:CordovaLib:generateDebugSources</span><br><span class="line">:CordovaLib:compileDebugJavaWithJavac注: 某些输入文件使用或覆盖了已过时的 API。</span><br><span class="line">注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。</span><br><span class="line"></span><br><span class="line">:CordovaLib:processDebugJavaRes UP-TO-DATE</span><br><span class="line">:CordovaLib:transformResourcesWithMergeJavaResForDebug</span><br><span class="line">:CordovaLib:transformClassesAndResourcesWithSyncLibJarsForDebug</span><br><span class="line">:CordovaLib:mergeDebugJniLibFolders</span><br><span class="line">:CordovaLib:transformNative_libsWithMergeJniLibsForDebug</span><br><span class="line">:CordovaLib:transformNative_libsWithSyncJniLibsForDebug</span><br><span class="line">:CordovaLib:bundleDebug</span><br><span class="line">:prepareAndroidCordovaLibUnspecifiedDebugLibrary</span><br><span class="line">:prepareDebugDependencies</span><br><span class="line">:compileDebugAidl</span><br><span class="line">:compileDebugRenderscript</span><br><span class="line">:generateDebugBuildConfig</span><br><span class="line">:generateDebugAssets UP-TO-DATE</span><br><span class="line">:mergeDebugAssets</span><br><span class="line">:generateDebugResValues</span><br><span class="line">:generateDebugResources</span><br><span class="line">:mergeDebugResources</span><br><span class="line">:processDebugManifest</span><br><span class="line">:processDebugResources</span><br><span class="line">:generateDebugSources</span><br><span class="line">:compileDebugJavaWithJavac</span><br><span class="line">:compileDebugNdk UP-TO-DATE</span><br><span class="line">:compileDebugSources</span><br><span class="line">:transformClassesWithDexForDebug</span><br><span class="line">:mergeDebugJniLibFolders</span><br><span class="line">:transformNative_libsWithMergeJniLibsForDebug</span><br><span class="line">:processDebugJavaRes UP-TO-DATE</span><br><span class="line">:transformResourcesWithMergeJavaResForDebug</span><br><span class="line">:validateDebugSigning</span><br><span class="line">:packageDebug</span><br><span class="line">:zipalignDebug</span><br><span class="line">:assembleDebug</span><br><span class="line">:cdvBuildDebug</span><br><span class="line"></span><br><span class="line">BUILD SUCCESSFUL</span><br><span class="line"></span><br><span class="line">Total time: 32.525 secs</span><br><span class="line">Built the following apk(s): </span><br><span class="line">	/Users/dfzxit/Desktop/wxl/cordovaApp/hello/platforms/android/build/outputs/apk/android-debug.apk</span><br><span class="line">bogon:hello dfzxit$ cordova <span class="built_in">emulate</span> android</span><br><span class="line">ANDROID_HOME=/usr/<span class="built_in">local</span>/android-sdk-macosx</span><br><span class="line">JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home</span><br><span class="line">No emulator specified, defaulting to Android4_1</span><br><span class="line">Waiting <span class="keyword">for</span> emulator...</span><br><span class="line">emulator: warning: opening audio input failed</span><br><span class="line"></span><br><span class="line">emulator: emulator window was out of view and was recentered</span><br><span class="line"></span><br><span class="line">emulator: UpdateCheck: current version <span class="string">'24.4.1'</span>, last version <span class="string">'24.4.1'</span></span><br><span class="line">Booting up emulator (this may take a <span class="keyword">while</span>)...BOOT COMPLETE</span><br><span class="line">:preBuild UP-TO-DATE</span><br><span class="line">:preDebugBuild UP-TO-DATE</span><br><span class="line">:checkDebugManifest</span><br><span class="line">:CordovaLib:preBuild UP-TO-DATE</span><br><span class="line">:CordovaLib:preDebugBuild UP-TO-DATE</span><br><span class="line">:CordovaLib:compileDebugNdk UP-TO-DATE</span><br><span class="line">:CordovaLib:compileLint</span><br><span class="line">:CordovaLib:copyDebugLint UP-TO-DATE</span><br><span class="line">:CordovaLib:mergeDebugProguardFiles UP-TO-DATE</span><br><span class="line">:CordovaLib:packageDebugRenderscript UP-TO-DATE</span><br><span class="line">:CordovaLib:checkDebugManifest</span><br><span class="line">:CordovaLib:prepareDebugDependencies</span><br><span class="line">:CordovaLib:compileDebugRenderscript UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugResValues UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugResources UP-TO-DATE</span><br><span class="line">:CordovaLib:packageDebugResources UP-TO-DATE</span><br><span class="line">:CordovaLib:compileDebugAidl UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugBuildConfig UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugAssets UP-TO-DATE</span><br><span class="line">:CordovaLib:mergeDebugAssets UP-TO-DATE</span><br><span class="line">:CordovaLib:processDebugManifest UP-TO-DATE</span><br><span class="line">:CordovaLib:processDebugResources UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugSources UP-TO-DATE</span><br><span class="line">:CordovaLib:compileDebugJavaWithJavac UP-TO-DATE</span><br><span class="line">:CordovaLib:processDebugJavaRes UP-TO-DATE</span><br><span class="line">:CordovaLib:transformResourcesWithMergeJavaResForDebug UP-TO-DATE</span><br><span class="line">:CordovaLib:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE</span><br><span class="line">:CordovaLib:mergeDebugJniLibFolders UP-TO-DATE</span><br><span class="line">:CordovaLib:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE</span><br><span class="line">:CordovaLib:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE</span><br><span class="line">:CordovaLib:bundleDebug UP-TO-DATE</span><br><span class="line">:prepareAndroidCordovaLibUnspecifiedDebugLibrary UP-TO-DATE</span><br><span class="line">:prepareDebugDependencies</span><br><span class="line">:compileDebugAidl UP-TO-DATE</span><br><span class="line">:compileDebugRenderscript UP-TO-DATE</span><br><span class="line">:generateDebugBuildConfig UP-TO-DATE</span><br><span class="line">:generateDebugAssets UP-TO-DATE</span><br><span class="line">:mergeDebugAssets UP-TO-DATE</span><br><span class="line">:generateDebugResValues UP-TO-DATE</span><br><span class="line">:generateDebugResources UP-TO-DATE</span><br><span class="line">:mergeDebugResources UP-TO-DATE</span><br><span class="line">:processDebugManifest UP-TO-DATE</span><br><span class="line">:processDebugResources UP-TO-DATE</span><br><span class="line">:generateDebugSources UP-TO-DATE</span><br><span class="line">:compileDebugJavaWithJavac UP-TO-DATE</span><br><span class="line">:compileDebugNdk UP-TO-DATE</span><br><span class="line">:compileDebugSources UP-TO-DATE</span><br><span class="line">:transformClassesWithDexForDebug UP-TO-DATE</span><br><span class="line">:mergeDebugJniLibFolders UP-TO-DATE</span><br><span class="line">:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE</span><br><span class="line">:processDebugJavaRes UP-TO-DATE</span><br><span class="line">:transformResourcesWithMergeJavaResForDebug UP-TO-DATE</span><br><span class="line">:validateDebugSigning</span><br><span class="line">:packageDebug UP-TO-DATE</span><br><span class="line">:zipalignDebug UP-TO-DATE</span><br><span class="line">:assembleDebug UP-TO-DATE</span><br><span class="line">:cdvBuildDebug UP-TO-DATE</span><br><span class="line"></span><br><span class="line">BUILD SUCCESSFUL</span><br><span class="line"></span><br><span class="line">Total time: 4.101 secs</span><br><span class="line">Built the following apk(s): </span><br><span class="line">	/Users/dfzxit/Desktop/wxl/cordovaApp/hello/platforms/android/build/outputs/apk/android-debug.apk</span><br><span class="line">Using apk: /Users/dfzxit/Desktop/wxl/cordovaApp/hello/platforms/android/build/outputs/apk/android-debug.apk</span><br><span class="line">Uninstalling app from device and reinstalling it again because the installed app already signed with different key</span><br><span class="line">INSTALL SUCCESS</span><br><span class="line">LAUNCH SUCCESS</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line">bogon:hello dfzxit$ cordova run android</span><br><span class="line">ANDROID_HOME=/usr/<span class="built_in">local</span>/android-sdk-macosx</span><br><span class="line">JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home</span><br><span class="line">No target specified, deploying to emulator</span><br><span class="line">:preBuild UP-TO-DATE</span><br><span class="line">:preDebugBuild UP-TO-DATE</span><br><span class="line">:checkDebugManifest</span><br><span class="line">:CordovaLib:preBuild UP-TO-DATE</span><br><span class="line">:CordovaLib:preDebugBuild UP-TO-DATE</span><br><span class="line">:CordovaLib:compileDebugNdk UP-TO-DATE</span><br><span class="line">:CordovaLib:compileLint</span><br><span class="line">:CordovaLib:copyDebugLint UP-TO-DATE</span><br><span class="line">:CordovaLib:mergeDebugProguardFiles UP-TO-DATE</span><br><span class="line">:CordovaLib:packageDebugRenderscript UP-TO-DATE</span><br><span class="line">:CordovaLib:checkDebugManifest</span><br><span class="line">:CordovaLib:prepareDebugDependencies</span><br><span class="line">:CordovaLib:compileDebugRenderscript UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugResValues UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugResources UP-TO-DATE</span><br><span class="line">:CordovaLib:packageDebugResources UP-TO-DATE</span><br><span class="line">:CordovaLib:compileDebugAidl UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugBuildConfig UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugAssets UP-TO-DATE</span><br><span class="line">:CordovaLib:mergeDebugAssets UP-TO-DATE</span><br><span class="line">:CordovaLib:processDebugManifest UP-TO-DATE</span><br><span class="line">:CordovaLib:processDebugResources UP-TO-DATE</span><br><span class="line">:CordovaLib:generateDebugSources UP-TO-DATE</span><br><span class="line">:CordovaLib:compileDebugJavaWithJavac UP-TO-DATE</span><br><span class="line">:CordovaLib:processDebugJavaRes UP-TO-DATE</span><br><span class="line">:CordovaLib:transformResourcesWithMergeJavaResForDebug UP-TO-DATE</span><br><span class="line">:CordovaLib:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE</span><br><span class="line">:CordovaLib:mergeDebugJniLibFolders UP-TO-DATE</span><br><span class="line">:CordovaLib:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE</span><br><span class="line">:CordovaLib:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE</span><br><span class="line">:CordovaLib:bundleDebug UP-TO-DATE</span><br><span class="line">:prepareAndroidCordovaLibUnspecifiedDebugLibrary UP-TO-DATE</span><br><span class="line">:prepareDebugDependencies</span><br><span class="line">:compileDebugAidl UP-TO-DATE</span><br><span class="line">:compileDebugRenderscript UP-TO-DATE</span><br><span class="line">:generateDebugBuildConfig UP-TO-DATE</span><br><span class="line">:generateDebugAssets UP-TO-DATE</span><br><span class="line">:mergeDebugAssets UP-TO-DATE</span><br><span class="line">:generateDebugResValues UP-TO-DATE</span><br><span class="line">:generateDebugResources UP-TO-DATE</span><br><span class="line">:mergeDebugResources UP-TO-DATE</span><br><span class="line">:processDebugManifest UP-TO-DATE</span><br><span class="line">:processDebugResources UP-TO-DATE</span><br><span class="line">:generateDebugSources UP-TO-DATE</span><br><span class="line">:compileDebugJavaWithJavac UP-TO-DATE</span><br><span class="line">:compileDebugNdk UP-TO-DATE</span><br><span class="line">:compileDebugSources UP-TO-DATE</span><br><span class="line">:transformClassesWithDexForDebug UP-TO-DATE</span><br><span class="line">:mergeDebugJniLibFolders UP-TO-DATE</span><br><span class="line">:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE</span><br><span class="line">:processDebugJavaRes UP-TO-DATE</span><br><span class="line">:transformResourcesWithMergeJavaResForDebug UP-TO-DATE</span><br><span class="line">:validateDebugSigning</span><br><span class="line">:packageDebug UP-TO-DATE</span><br><span class="line">:zipalignDebug UP-TO-DATE</span><br><span class="line">:assembleDebug UP-TO-DATE</span><br><span class="line">:cdvBuildDebug UP-TO-DATE</span><br><span class="line"></span><br><span class="line">BUILD SUCCESSFUL</span><br><span class="line"></span><br><span class="line">Total time: 3.171 secs</span><br><span class="line">Built the following apk(s): </span><br><span class="line">	/Users/dfzxit/Desktop/wxl/cordovaApp/hello/platforms/android/build/outputs/apk/android-debug.apk</span><br><span class="line">Using apk: /Users/dfzxit/Desktop/wxl/cordovaApp/hello/platforms/android/build/outputs/apk/android-debug.apk</span><br><span class="line">INSTALL SUCCESS</span><br><span class="line">LAUNCH SUCCESS</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">bogon:hello dfzxit$ <span class="built_in">cd</span> platforms</span><br><span class="line">bogon:platforms dfzxit$ <span class="built_in">cd</span> android</span><br><span class="line">bogon:android dfzxit$ <span class="built_in">cd</span> build</span><br><span class="line">bogon:build dfzxit$ <span class="built_in">cd</span> outputs/apk/</span><br><span class="line">bogon:apk dfzxit$ keytool -genkey -v -keystore hello.keystore -<span class="built_in">alias</span> hello -keyalg RSA -validity 36500</span><br><span class="line">输入密钥库口令:  </span><br><span class="line">密钥库口令太短 - 至少必须为 6 个字符</span><br><span class="line">输入密钥库口令:  </span><br><span class="line">再次输入新口令: </span><br><span class="line">您的名字与姓氏是什么?</span><br><span class="line">  [Unknown]:  小                                                 </span><br><span class="line">您的组织单位名称是什么?</span><br><span class="line">  [Unknown]:  东方之星</span><br><span class="line">您的组织名称是什么?</span><br><span class="line">  [Unknown]:  东方之星</span><br><span class="line">您所在的城市或区域名称是什么?</span><br><span class="line">  [Unknown]:  北京</span><br><span class="line">您所在的省/市/自治区名称是什么?</span><br><span class="line">  [Unknown]:  北京</span><br><span class="line">该单位的双字母国家/地区代码是什么?</span><br><span class="line">  [Unknown]:  中国</span><br><span class="line">CN=Unknown, OU=东方之星, O=东方之星, L=北京, ST=北京, C=中国是否正确?</span><br><span class="line">  [否]:  n</span><br><span class="line">您的名字与姓氏是什么?</span><br><span class="line">  [Unknown]:  小乐</span><br><span class="line">您的组织单位名称是什么?</span><br><span class="line">  [东方之星]:  东方之星</span><br><span class="line">您的组织名称是什么?</span><br><span class="line">  [东方之星]:  东方之星</span><br><span class="line">您所在的城市或区域名称是什么?</span><br><span class="line">  [北京]:  北京</span><br><span class="line">您所在的省/市/自治区名称是什么?</span><br><span class="line">  [北京]:  北京</span><br><span class="line">该单位的双字母国家/地区代码是什么?</span><br><span class="line">  [中国]:  中国</span><br><span class="line">CN=小乐, OU=东方之星, O=东方之星, L=北京, ST=北京, C=中国是否正确?</span><br><span class="line">  [否]:  y</span><br><span class="line"></span><br><span class="line">正在为以下对象生成 2,048 位RSA密钥对和自签名证书 (SHA256withRSA) (有效期为 36,500 天):</span><br><span class="line">	 CN=小乐, OU=东方之星, O=东方之星, L=北京, ST=北京, C=中国</span><br><span class="line">输入 &lt;hello&gt; 的密钥口令</span><br><span class="line">	(如果和密钥库口令相同, 按回车):  </span><br><span class="line">再次输入新口令: </span><br><span class="line">它们不匹配。请重试</span><br><span class="line">输入 &lt;hello&gt; 的密钥口令</span><br><span class="line">	(如果和密钥库口令相同, 按回车):  </span><br><span class="line">[正在存储hello.keystore]</span><br><span class="line">bogon:apk dfzxit$ jarsigner -keystore hello.keystore -digestalg SHA1 -sigalg MD5withRSA android-release-unsigned.apk hello</span><br><span class="line">输入密钥库的密码短语: </span><br><span class="line">jar 已签名。</span><br><span class="line"></span><br><span class="line">警告: </span><br><span class="line">未提供 -tsa 或 -tsacert, 此 jar 没有时间戳。如果没有时间戳, 则在签名者证书的到期日期 (2118-04-28) 或以后的任何撤销日期之后, 用户可能无法验证此 jar。</span><br></pre></td></tr></table></figure>
+<p>参考链接</p>
+<p><a href="https://blog.csdn.net/zp511253886/article/details/49817637" target="_blank" rel="noopener">cordova常用命令</a></p>
+<p>二把刀到此一游，我觉得算是个小入门</p>
+<p>感觉这个挺对<br><a href="https://blog.csdn.net/linux7985/article/details/52366742" target="_blank" rel="noopener">ionic开发篇之踩坑集</a></p>
+<p>我在用测试的时候发现一个window.history.go(-1)||window.close()产生的问题<br>参考了以下链接：</p>
+<p><a href="https://www.hitoy.org/window-history-go-window-close-problem.html" target="_blank" rel="noopener">一个window.history.go(-1)||window.close()产生的问题</a></p>
+<p><a href="https://my.oschina.net/u/1251858/blog/1799004" target="_blank" rel="noopener">使用cordova把h5应用打包成apk</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/26/andorid_studio_cordova/android_studio_cordova/" data-id="cjlaj872q0002m4qnz1eubirt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-你好，Hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/26/你好，Hexo/" class="article-date">
+  <time datetime="2018-08-26T07:16:49.000Z" itemprop="datePublished">2018-08-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/26/你好，Hexo/">你好，Hexo</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/26/你好，Hexo/" data-id="cjlaj87030000m4qn8tujhpxk" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/26/hello-world/" class="article-date">
+  <time datetime="2018-08-26T06:09:00.817Z" itemprop="datePublished">2018-08-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/26/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/26/hello-world/" data-id="cjlaj87200001m4qnhvd0s1ii" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/08/26/andorid_studio_cordova/android_studio_cordova/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/26/你好，Hexo/">你好，Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/26/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
